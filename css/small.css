@@ -1,0 +1,27 @@
+/*Colors*/
+/*Font*/
+@media (min-width: 0px) {
+  /*Global Headers*/
+  h1 {
+    font-size: 38px;
+    font-family: "lato", sans-serif; }
+  h2 {
+    font-size: 32px;
+    font-family: "lato", sans-serif; }
+  h3 {
+    font-size: 26px;
+    font-family: "lato", sans-serif; }
+  h4 {
+    font-size: 20px;
+    font-family: "lato", sans-serif; }
+  h5 {
+    font-size: 18px;
+    font-family: "lato", sans-serif; }
+  h6 {
+    font-size: 16px;
+    font-family: "lato", sans-serif; }
+  p {
+    font-size: 14px;
+    font-family: "lato", sans-serif; }
+  body {
+    background-color: #009BCC; } }
