@@ -1,2 +1,7 @@
 /*Colors*/
 /*Font*/
+@media only screen and (min-width: 480px) {
+  .header-wrapper .header .name-title {
+    order: 3; }
+  .header-wrapper .header .hammy {
+    order: 2; } }

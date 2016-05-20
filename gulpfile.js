@@ -51,17 +51,14 @@ gulp.task('sass', function () {
 	gulp.src(['scss/**/*.scss'])
 		.pipe(plumber())
 		.pipe(sass())
-		.pipe(gulp.dest('./css'))
-		.pipe(browserSync.reload({
-      		stream: true
-    	}));
+		.pipe(gulp.dest('./css'));
 
 });
 /////
 //Concat Styles Task
 /////////////
 gulp.task('concatcss', function() {
-    gulp.src(['css/bootstrap.css','css/small.css','css/320.css','css/480.css','css/600.css','css/768.css','css/992.css','css/1280.css','css/big.css'])
+    gulp.src(['css/bootstrap.css','css/small.css','css/320.css','css/480.css','css/449.css','css/600.css','css/768.css','css/992.css','css/1280.css','css/big.css'])
         .pipe(plumber())
     	.pipe(concat('main.css'))
         .pipe(gulp.dest('css'));

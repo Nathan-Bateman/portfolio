@@ -1,27 +1,157 @@
 /*Colors*/
 /*Font*/
-@media (min-width: 0px) {
-  /*Global Headers*/
-  h1 {
-    font-size: 38px;
-    font-family: "lato", sans-serif; }
-  h2 {
-    font-size: 32px;
-    font-family: "lato", sans-serif; }
-  h3 {
-    font-size: 26px;
-    font-family: "lato", sans-serif; }
-  h4 {
-    font-size: 20px;
-    font-family: "lato", sans-serif; }
-  h5 {
-    font-size: 18px;
-    font-family: "lato", sans-serif; }
-  h6 {
-    font-size: 16px;
-    font-family: "lato", sans-serif; }
-  p {
-    font-size: 14px;
-    font-family: "lato", sans-serif; }
-  body {
-    background-color: #009BCC; } }
+/*Global Headers*/
+h1 {
+  font-size: 34px;
+  font-family: "lato", sans-serif; }
+
+h2 {
+  font-size: 28px;
+  font-family: "lato", sans-serif; }
+
+h3 {
+  font-size: 24px;
+  font-family: "lato", sans-serif; }
+
+h4 {
+  font-size: 22px;
+  font-family: "lato", sans-serif; }
+
+h5 {
+  font-size: 20px;
+  font-family: "lato", sans-serif; }
+
+h6 {
+  font-size: 18px;
+  font-family: "lato", sans-serif; }
+
+p {
+  font-size: 16px;
+  font-family: "lato", sans-serif; }
+
+.container-fluid {
+  padding: 0; }
+
+/*Main styles - header*/
+.header-wrapper {
+  background-color: #00617F; }
+  .header-wrapper .header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 15px; }
+    .header-wrapper .header .face {
+      /*order:1;*/
+      margin: 0 auto; }
+      .header-wrapper .header .face img {
+        border-radius: 50%; }
+      .header-wrapper .header .face ul {
+        display: block;
+        text-align: center;
+        padding: 10px 0 0 0; }
+        .header-wrapper .header .face ul li {
+          list-style-type: none;
+          display: inline-block;
+          padding-left: 2px;
+          padding-right: 2px; }
+          .header-wrapper .header .face ul li img {
+            border-radius: 50%;
+            color: #FFF; }
+        .header-wrapper .header .face ul li:first-child {
+          padding: 0; }
+        .header-wrapper .header .face ul li:last-child {
+          padding: 0; }
+    .header-wrapper .header .name-title {
+      order: 3;
+      text-align: center;
+      padding-right: 5px;
+      padding-left: 5px;
+      margin: 0 auto; }
+      .header-wrapper .header .name-title h1 {
+        margin: 0;
+        color: #FFF; }
+      .header-wrapper .header .name-title h3 {
+        margin: 10px 0 0 0;
+        color: #FFF; }
+    .header-wrapper .header .hammy {
+      display: none;
+      order: 2;
+      font-size: 30px;
+      padding: 0 5px 0 0; }
+      .header-wrapper .header .hammy a {
+        color: #FFF; }
+      .header-wrapper .header .hammy a:hover {
+        text-decoration: none; }
+
+.hide-menu {
+  display: none; }
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  z-index: 20;
+  color: #fff;
+  transition: all 3s ease-in-out; }
+  .sticky a {
+    color: #fff;
+    font-size: 30px;
+    float: right;
+    clear: right; }
+  .sticky a:hover {
+    text-decoration: none; }
+  .sticky .header h3 {
+    margin: 0;
+    text-align: center; }
+  .sticky .header .col-sm-4:first-child h3 {
+    padding: 0;
+    margin: 0 0 0 -30px;
+    text-align: left; }
+
+/*Main styles - summary*/
+#summary-section {
+  margin-bottom: 20px; }
+
+.summary {
+  color: #00617F; }
+  .summary h2 {
+    text-align: center; }
+  .summary p {
+    max-width: 768px;
+    padding: 0 30px 0 30px;
+    margin: 0 auto;
+    text-align: center; }
+
+/*Main styles - carousel*/
+#carousel-section {
+  background-color: rgba(0, 193, 255, 0.23);
+  color: #00617F; }
+
+/*Main styles - skills*/
+#skills {
+  color: #00617F; }
+  #skills h2 {
+    margin-bottom: 20px;
+    text-align: center; }
+
+#skills-list {
+  margin-bottom: 20px; }
+  #skills-list .lists {
+    display: flex;
+    justify-content: center;
+    color: #00617F; }
+    #skills-list .lists ul {
+      font-size: 16px; }
+
+/*Main styles - footer*/
+#footer {
+  background-color: #009BCC;
+  padding: 0 20px 0 20px; }
+  #footer .social {
+    padding: 20px 0 20px 0; }
+    #footer .social ul {
+      list-style-type: none;
+      display: flex;
+      justify-content: space-around; }

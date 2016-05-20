@@ -1,5 +1,10 @@
 /*Colors*/
 /*Font*/
 @media (min-width: 600px) {
-  body {
-    background-color: #009BCC; } }
+  /*.header-wrapper {
+		.header {
+			.name-title {
+				padding-right: 90px;
+			}
+		}
+	}*/ }
