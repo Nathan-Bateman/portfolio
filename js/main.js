@@ -62,4 +62,9 @@ $(document).ready(function() {
 		});
 	});
 
+	$( "#menu" ).click(function() {
+  		$( "#menu" ).fadeOut( "fast" );
+  		$( "#menu-num" ).delay("slow").fadeIn('slow');
+	});
+
 });

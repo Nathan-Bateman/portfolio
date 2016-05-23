@@ -1,3 +1,21 @@
+@media (min-width: 477px) and (max-width: 480px) {
+.header-wrapper {
+		.header {
+			.name-title {
+				order:2;
+				margin-top: 85px;
+				padding-right: 35px;
+			}
+			.hammy {
+				order:3;
+			}
+			.face {
+				padding-left: 0;
+				margin:.01px;
+			}
+		}
+	}
+}
 @media (min-width: 481px) and (max-width: 536px) {
 .header-wrapper {
 		.header {

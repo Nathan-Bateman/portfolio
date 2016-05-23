@@ -36,6 +36,9 @@
 		padding:0;
 	}
 /*Main styles - header*/
+body {
+	overflow-x: hidden;
+}
 	.header-wrapper {
 		background-color: $primary;
 		.header {
@@ -102,6 +105,9 @@
 	    		a:hover {
 	    			text-decoration: none;
 	    		}
+	    		#menu-num {
+	    			display: none;
+	    		}
 			}
 		}
 		
@@ -127,6 +133,9 @@
 	    a:hover {
 	    	text-decoration: none;
 	    }
+	    #menu-num {
+	    			display: none;
+	    		}
 	    .header {
 	    	h3 {
 	    		margin:0;
