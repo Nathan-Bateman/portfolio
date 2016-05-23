@@ -1,0 +1,5 @@
+@media (min-width: 992px) {
+  #carousel-section .hide-carousel {
+    display: block; }
+  #carousel-section .not-carousel {
+    display: none; } }

@@ -13,6 +13,7 @@
 	h3 {
 		font-size: 24px;
 		font-family: $lato;
+		font-weight: 100;
 	}
 	h4 {
 		font-size: 22px;
@@ -29,6 +30,7 @@
 	p {
 		font-size: 16px;
 		font-family: $lato;
+		font-weight: 300;
 	}
 	.container-fluid {
 		padding:0;
@@ -58,8 +60,8 @@
 					li {
 						list-style-type: none;
 						display: inline-block;
-						padding-left: 2px;
-						padding-right:2px;
+						padding-left: 10px;
+						padding-right:10px;
 						img {
 							border-radius: 50%;
 							color:#FFF;
@@ -113,7 +115,7 @@
 	    width: 100%;
 	    padding: 0;
 	    margin: 0;
-	    z-index: 20;
+	    z-index: 200;
 	    color:#fff;
 	    transition: all 3s ease-in-out;
 	    a {
@@ -129,6 +131,7 @@
 	    	h3 {
 	    		margin:0;
 	    		text-align: center;
+	    		margin-right: 25px;
 	    	}
 	    	.col-sm-4:first-child {
 		    	h3 {
@@ -161,6 +164,84 @@
 #carousel-section {
 	background-color: rgba(0, 193, 255, 0.23);
 	color: $primary;
+	.hide-carousel {
+		display: none;
+	}
+	.carousel {
+		width: 100%;
+		overflow: hidden;
+		h2 {
+			text-align: center;
+    		margin-bottom: -60px;
+		}
+	}
+	.carousel-wrapper {
+		display: flex;
+		flex-wrap:nowrap;
+		min-height: 500px;
+		position: relative;
+    	top: 0;
+    	left:-450px;
+    	transform: translateY(25%);
+    	li:first-child {
+    		margin-left:50px;
+    	}
+    	> li {
+    		padding: 0 50px 0 50px;
+    		list-style-type: none;
+    	}	
+	}
+	.move-right {
+		width: 0;
+	    height: 0;
+	    border-top: 43px solid transparent;
+    	border-bottom: 43px solid transparent;
+    	border-left: 43px solid rgba(0,97,127,.45);
+    	position: absolute;
+    	top: 50%;
+    	right: 1%;
+    	z-index: 1;
+    	padding-right:15px;
+	}
+	.move-left {
+		width: 0;
+	    height: 0;
+	    border-top: 43px solid transparent;
+    	border-bottom: 43px solid transparent;
+    	border-right: 43px solid rgba(0,97,127,.45);
+    	position: absolute;
+    	top: 50%;
+    	left: 1%;
+    	z-index: 1;
+    	padding-left:15px;
+	}
+	.arrow-wrapper-left {
+		position: absolute;
+	    z-index: 44;
+	    background-color: #C5F1FF;
+	    height: 100%;
+	    min-width: 50px;
+	    top:0;
+	    left:0;
+	}
+	.arrow-wrapper-right {
+		position: absolute;
+		top: 0;
+		right: 0;
+	    z-index: 44;
+	    background-color: #C5F1FF;
+	    height: 100%;
+	    min-width: 50px;
+	}
+	.not-carousel {
+		>div {
+			margin-bottom: 25px;
+		}
+		h2 {
+			text-align: center;
+			margin-bottom: 25px;
+		}
+	}
 }
 /*Main styles - skills*/
 #skills {
@@ -178,6 +259,14 @@
 		color: $primary;
 		ul {
 		font-size: 16px;
+		font-family: lato;
+		font-weight: 300;
+		}
+		ul:first-child {
+			margin-right: 15px;
+		}
+		ul:last-child {
+			margin-left: 15px;
 		}
 	}		
 }
@@ -193,4 +282,46 @@
 			justify-content:space-around;
 		}
 	}
+}
+/*Modal Styles*/
+.modal {
+	.modal-img-wrap {
+		/*background-color: rgba(62, 112, 127, 0.5);*/
+		background-color: #fff;
+    	padding: 20px;
+
+    	img {
+    		margin:0 auto;
+
+    	}
+    }
+    .modal-header {
+    	background-color: $primary;
+    	color: #fff;
+    	a {
+    		text-decoration: none;
+    		color: #fff;
+    	}
+    	.modal-parent {
+    		display: block;
+    		span:first-child {
+    			display:inline-block; 
+    		}
+    		span:last-child-child {
+    			display:inline-block; 
+    			float: right;
+    		}
+    	}
+    }
+    .modal-footer {
+    	background-color: $primary;
+    	display: flex;
+    	justify-content: space-around;
+    	button {
+    		background-color: #FFFFFF;
+    		color: $primary;
+    		min-width: 100px;
+    		text-align: center;
+    	}
+    }
 }
