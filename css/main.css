@@ -342,11 +342,6 @@ body {
   .header-wrapper .header .hammy {
     padding-right: 30px; } }
 
-@media (min-width: 992px) {
-  #carousel-section .hide-carousel {
-    display: block; }
-  #carousel-section .not-carousel {
-    display: none; } }
 
 @media (min-width: 1280px) {
   #carousel-section .hide-carousel {
