@@ -171,6 +171,11 @@ body {
 }
 /*Main styles - carousel*/
 #carousel-section {
+	img {
+		background-color: #fff;
+    	height: 300px;
+    	width: 300px;
+	}
 	background-color: rgba(0, 193, 255, 0.23);
 	color: $primary;
 	.hide-carousel {
@@ -292,19 +297,38 @@ body {
 			list-style-type: none;
 			display: flex;
 			justify-content:space-around;
+			img {
+    			border-radius: 50%;
+    			max-width: 64px;
+			}
+			li:first-child img {
+				background-color: rgba(0, 0, 255, 0);
+				max-width: 76px;
+    			margin-top: -5.5px;
+			}
+			li:last-child img {
+				background-color: #fff;
+			}
+
 		}
 	}
 }
 /*Modal Styles*/
 .modal {
 	.modal-img-wrap {
-		/*background-color: rgba(62, 112, 127, 0.5);*/
+		border-bottom: 1.5px solid;
 		background-color: #fff;
     	padding: 20px;
 
     	img {
     		margin:0 auto;
+    		border: 1.5px solid black;
 
+    	}
+    }
+    .skill-description {
+    	div:first-child {
+    		border-right: 1.5px black solid;
     	}
     }
     .modal-header {

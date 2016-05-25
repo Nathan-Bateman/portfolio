@@ -138,6 +138,10 @@ body {
 #carousel-section {
   background-color: rgba(0, 193, 255, 0.23);
   color: #00617F; }
+  #carousel-section img {
+    background-color: #fff;
+    height: 300px;
+    width: 300px; }
   #carousel-section .hide-carousel {
     display: none; }
   #carousel-section .carousel {
@@ -237,14 +241,27 @@ body {
       list-style-type: none;
       display: flex;
       justify-content: space-around; }
+      #footer .social ul img {
+        border-radius: 50%;
+        max-width: 64px; }
+      #footer .social ul li:first-child img {
+        background-color: rgba(0, 0, 255, 0);
+        max-width: 76px;
+        margin-top: -5.5px; }
+      #footer .social ul li:last-child img {
+        background-color: #fff; }
 
 /*Modal Styles*/
 .modal .modal-img-wrap {
-  /*background-color: rgba(62, 112, 127, 0.5);*/
+  border-bottom: 1.5px solid;
   background-color: #fff;
   padding: 20px; }
   .modal .modal-img-wrap img {
-    margin: 0 auto; }
+    margin: 0 auto;
+    border: 1.5px solid black; }
+
+.modal .skill-description div:first-child {
+  border-right: 1.5px black solid; }
 
 .modal .modal-header {
   background-color: #00617F;
