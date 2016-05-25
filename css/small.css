@@ -269,6 +269,8 @@ body {
   .modal .modal-header a {
     text-decoration: none;
     color: #fff; }
+  .modal .modal-header #close {
+    padding: 15px 5px 15px 10px; }
   .modal .modal-header .modal-parent {
     display: block; }
     .modal .modal-header .modal-parent span:first-child {

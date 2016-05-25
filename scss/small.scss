@@ -337,6 +337,10 @@ body {
     	a {
     		text-decoration: none;
     		color: #fff;
+    		
+    	}
+    	#close {
+    		padding: 15px 5px 15px 10px;
     	}
     	.modal-parent {
     		display: block;
@@ -347,6 +351,7 @@ body {
     			display:inline-block; 
     			float: right;
     		}
+
     	}
     }
     .modal-footer {
