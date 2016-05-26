@@ -38,8 +38,14 @@ p {
 body {
   overflow-x: hidden; }
 
+.container-fluid {
+  overflow-x: hidden; }
+
 .header-wrapper {
   background-color: #00617F; }
+  .header-wrapper #big-wrap-head {
+    max-width: 1300px;
+    margin: 0 auto; }
   .header-wrapper .header {
     display: flex;
     justify-content: space-between;
@@ -52,7 +58,8 @@ body {
         display: block;
         color: #fff; }
       .header-wrapper .header .face img {
-        border-radius: 50%; }
+        border-radius: 50%;
+        max-width: 120px; }
       .header-wrapper .header .face ul {
         display: block;
         text-align: center;
@@ -123,6 +130,9 @@ body {
   z-index: 200;
   color: #fff;
   transition: all 3s ease-in-out; }
+  .sticky #big-wrap-sticky {
+    max-width: 1300px;
+    margin: 0 auto; }
   .sticky a {
     color: #fff;
     font-size: 30px;
@@ -130,8 +140,8 @@ body {
     clear: right; }
   .sticky a:hover {
     text-decoration: none; }
-  .sticky #menu-num {
-    display: none; }
+  .sticky #menu-num:hover {
+    text-decoration: underline; }
   .sticky .header h3 {
     margin: 0;
     text-align: center;
@@ -146,6 +156,9 @@ body {
 /*Main styles - summary*/
 #summary-section {
   margin-bottom: 20px; }
+  #summary-section #big-summary-wrap {
+    max-width: 1300px;
+    margin: 0 auto; }
 
 .summary {
   color: #00617F; }
@@ -161,6 +174,9 @@ body {
 #carousel-section {
   background-color: rgba(0, 193, 255, 0.23);
   color: #00617F; }
+  #carousel-section #big-carousel-wrap {
+    max-width: 1300px;
+    margin: 0 auto; }
   #carousel-section img {
     background-color: #fff;
     height: 300px;
@@ -258,6 +274,9 @@ body {
 #footer {
   background-color: #009BCC;
   padding: 0 20px 0 20px; }
+  #footer #big-footer-wrap {
+    margin: 0 auto;
+    max-width: 1300px; }
   #footer .social {
     padding: 20px 0 20px 0; }
     #footer .social ul {
@@ -294,7 +313,7 @@ body {
     text-decoration: none;
     color: #fff; }
   .modal .modal-header #close {
-    padding: 15px 5px 15px 10px; }
+    padding: 5px 15px 15px 15px; }
   .modal .modal-header .modal-parent {
     display: block; }
     .modal .modal-header .modal-parent span:first-child {

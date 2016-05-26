@@ -11330,15 +11330,18 @@ $(document).ready(function() {
 	});
 
 	$( "#menu" ).click(function() {
-  		// $( "#menu" ).fadeOut( "fast" );
+
   		$( "#menu-num p" ).toggleClass('transform-visibility');
-  		//$( "#menu-num" ).fadeToggle( "slow", "linear" );
+	});
+	$( ".sticky .header #menu" ).click(function() {
+		$( ".sticky .header #menu" ).toggleClass('hide-menu');
+  		$( ".show-sticky #menu-num" ).toggleClass('hide-menu');
 	});
 
 });
 //display carousel but not on mobile or small
-var carouselProjects = document.querySelector('.hide-carousel');
-var normalProjects = document.querySelectorAll('.not-carousel');
+var carouselProjects = $('.carousel');
+var normalProjects = $('.not-carousel');
 
 window.mobileAndTabletcheck = function() {
   var check = false;
@@ -11347,12 +11350,9 @@ window.mobileAndTabletcheck = function() {
 }
 	
 if (window.mobileAndTabletcheck() === true) {
-	carouselProjects.style.display = 'none';
-	// for (var i = normalProjects.length - 1; i >= 0; i++) {
-	// 	normalProjects[i].style.display = 'block';
-	// };
+	carouselProjects.addClass( "hide-carousel" );
 
 } else {
-	// document.querySelector('.not-carousel').style.display = 'none';
-	// document.querySelector('.hide-carousel').style.display = 'block';
+	normalProjects.addClass( "hide-carousel" );
+
 	}
