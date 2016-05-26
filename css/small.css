@@ -263,7 +263,8 @@ body {
     #footer .social ul {
       list-style-type: none;
       display: flex;
-      justify-content: space-around; }
+      justify-content: space-around;
+      padding: 0; }
       #footer .social ul img {
         border-radius: 50%;
         max-width: 64px; }
