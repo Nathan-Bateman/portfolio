@@ -7,5 +7,14 @@
 			}
 		}
 	}
+	.sticky .header h3 {
+		display: block;
+	}
+
 	
+}
+@media (min-width: 767px) and (max-width: 835px) {
+	.sticky .header h3 {
+		margin-right: 0;
+	}
 }

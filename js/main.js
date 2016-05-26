@@ -10,11 +10,13 @@ var projectSix =  $('.c-six');
 $(window).scroll(function() {
 	if ($(window).width() >= 768 && $(this).scrollTop() >=180) {
 		sticky.removeClass( "hide-menu" );
+		sticky.addClass('show-sticky');
 		//defaultHeader.toggleClass( "hide-menu" );
 		console.log($(this).scrollTop());
 		console.log('defaultHeader.scrollTop()');
 	} else {
 		sticky.addClass('hide-menu');
+		sticky.removeClass('show-sticky');
 	};
 });
 //modal data attributes to load
@@ -63,8 +65,9 @@ $(document).ready(function() {
 	});
 
 	$( "#menu" ).click(function() {
-  		$( "#menu" ).fadeOut( "fast" );
-  		$( "#menu-num" ).delay("slow").fadeIn('slow');
+  		// $( "#menu" ).fadeOut( "fast" );
+  		$( "#menu-num p" ).toggleClass('transform-visibility');
+  		//$( "#menu-num" ).fadeToggle( "slow", "linear" );
 	});
 
 });
@@ -77,7 +80,7 @@ window.mobileAndTabletcheck = function() {
 
 if (window.mobileAndTabletcheck() === true) {
 	document.querySelector('.hide-carousel').style.display = 'none';
-	// document.querySelector('.not-carousel').style.display = 'block';
+	document.querySelector('.not-carousel').style.display = 'block';
 
 } else {
 	// document.querySelector('.not-carousel').style.display = 'none';

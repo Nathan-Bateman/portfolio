@@ -48,6 +48,9 @@ body {
     .header-wrapper .header .face {
       /*order:1;*/
       margin: 0 auto; }
+      .header-wrapper .header .face #tel-small {
+        display: block;
+        color: #fff; }
       .header-wrapper .header .face img {
         border-radius: 50%; }
       .header-wrapper .header .face ul {
@@ -80,18 +83,36 @@ body {
         color: #FFF; }
     .header-wrapper .header .hammy {
       display: none;
+      visibility: hidden !important;
       order: 2;
       font-size: 30px;
       padding: 0 5px 0 0; }
       .header-wrapper .header .hammy a {
-        color: #FFF; }
-      .header-wrapper .header .hammy a:hover {
+        color: #FFF;
         text-decoration: none; }
-      .header-wrapper .header .hammy #menu-num {
-        display: none; }
+      .header-wrapper .header .hammy #menu {
+        margin-left: 50px; }
+      .header-wrapper .header .hammy #menu-num p {
+        visibility: hidden;
+        display: none;
+        padding-top: 5px;
+        -webkit-transition: all 1s ease;
+        -moz-transition: all 1s ease;
+        -o-transition: all 1s ease;
+        -ms-transition: all 1s ease;
+        transition: all 1s ease;
+        color: rgba(255, 255, 255, 0); }
+      .header-wrapper .header .hammy #menu-num .transform-visibility {
+        visibility: visible;
+        color: white; }
+      .header-wrapper .header .hammy #menu-num:hover {
+        text-decoration: underline; }
 
 .hide-menu {
-  display: none; }
+  display: none !important; }
+
+.show-sticky {
+  display: block; }
 
 .sticky {
   position: fixed;
@@ -114,11 +135,13 @@ body {
   .sticky .header h3 {
     margin: 0;
     text-align: center;
-    margin-right: 25px; }
+    margin-right: 25px;
+    display: none; }
   .sticky .header .col-sm-4:first-child h3 {
     padding: 0;
     margin: 0 0 0 -30px;
-    text-align: left; }
+    text-align: left;
+    display: block; }
 
 /*Main styles - summary*/
 #summary-section {
