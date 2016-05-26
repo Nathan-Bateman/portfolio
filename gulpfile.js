@@ -38,9 +38,9 @@ gulp.task('scripts', function(){
 //Minify Task
 /////////////
 gulp.task('minifycss', function() {
-	gulp.src(['css/final.css'])
+	gulp.src(['css/main.css'])
 	.pipe(plumber())
-	.pipe(cleancss({keepBreaks: false}))
+	.pipe(cleancss({keepBreaks: true}))
 	.pipe(rename({suffix:'.min'}))
 	.pipe(gulp.dest('css'));
 });
@@ -58,7 +58,7 @@ gulp.task('sass', function () {
 //Concat Styles Task
 /////////////
 gulp.task('concatcss', function() {
-    gulp.src(['css/bootstrap.css','css/small.css','css/320.css','css/480.css','css/449.css','css/600.css','css/768.css','css/992.css','css/1280.css','css/big.css'])
+    gulp.src(['css/bootstrap.clean.css','css/small.css','css/320.css','css/480.css','css/449.css','css/600.css','css/768.css','css/992.css','css/1280.css','css/big.css'])
         .pipe(plumber())
     	.pipe(concat('main.css'))
         .pipe(gulp.dest('css'));
@@ -68,7 +68,7 @@ gulp.task('concatcss', function() {
 gulp.task('uncss', function() {
     gulp.src('css/bootstrap.css')
         .pipe(uncss({
-            html: ['http://localhost:8888/index.php', 'http://localhost:8888/about.php', 'http://localhost:8888/projects.php','http://localhost:8888/news.php','http://localhost:8888/donate.php','http://localhost:8888/news-archive.php','http://localhost:8888/sponsor.php','http://localhost:8888/emunah.php'],
+            html: ['http://localhost:8888/index.html'],
             ignore:['.modal-open']
         }))
         .pipe(rename({suffix:'.clean'}))
